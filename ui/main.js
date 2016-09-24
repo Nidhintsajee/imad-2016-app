@@ -7,7 +7,7 @@ element.innerHTML='New value';
 //move the image
 var img=document.getElementById('madi');
 var marginLeft=0;
-function moveRoight(){
+function moveRight(){
     marginLeft=marginLeft+10;
     img.style.marginLeft=marginLeft+'px';
 }
