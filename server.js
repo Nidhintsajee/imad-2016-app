@@ -8,7 +8,11 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
+var Counter=0;
+app.get('/counter', function (req, res) {
+  Counter=Counter +1
+  res.send(Counter.toString());
+});
 
 app.get('/article-one', function (req, res) {
   res.send('article one requested is served here');
